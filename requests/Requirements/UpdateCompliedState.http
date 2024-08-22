@@ -1,0 +1,16 @@
+### Set complied state of a requirement to true
+@requirementId=257f5b62-a27b-4b80-8222-da1d7d42cb74
+POST {{host}}/api/requirements/{{requirementId}}/compliance
+Content-Type: application/json
+
+{
+    "isComplied": true
+}
+
+### Set complied state of a requirement to false
+POST {{host}}/api/requirements/{{requirementId}}/compliance
+Content-Type: application/json
+
+{
+    "isComplied": false
+}

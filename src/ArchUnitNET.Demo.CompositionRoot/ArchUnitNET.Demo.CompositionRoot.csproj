@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ArchUnitNET.Demo.Application\ArchUnitNET.Demo.Application.csproj" />
+      <ProjectReference Include="..\ArchUnitNET.Demo.Domain\ArchUnitNET.Demo.Domain.csproj" />
+      <ProjectReference Include="..\ArchUnitNET.Demo.Infrastructure\ArchUnitNET.Demo.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

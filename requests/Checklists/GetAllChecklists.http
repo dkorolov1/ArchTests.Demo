@@ -1,0 +1,3 @@
+### Get All Checklists
+GET {{host}}/api/checklists
+Content-Type: application/json

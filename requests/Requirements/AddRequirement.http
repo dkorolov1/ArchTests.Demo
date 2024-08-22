@@ -1,0 +1,18 @@
+### Add Requirement Success
+@checklistId=c03de44e-25b7-44a9-afcc-c54dff0811b0
+POST {{host}}/api/checklists/{{checklistId}}/requirements
+Content-Type: application/json
+
+{
+    "title": "Requirement 1",
+    "text": "Text 1"
+}
+
+### Add Requirement Error
+POST {{host}}/api/checklists/{{checklistId}}/requirements
+Content-Type: application/json
+
+{
+    "title": "",
+    "text": "Text 1"
+}

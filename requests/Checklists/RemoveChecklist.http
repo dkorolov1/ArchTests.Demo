@@ -1,0 +1,8 @@
+### Remove Checklist Success
+@checklistId=982e58f3-6712-45bd-96c9-c662ba18cf5f
+DELETE {{host}}/api/checklists/{{checklistId}}
+Content-Type: application/json
+
+### Remove Checklist Error
+DELETE {{host}}/api/checklists/wrong_id
+Content-Type: application/json

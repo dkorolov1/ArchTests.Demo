@@ -1,0 +1,17 @@
+### Add Checklist Success
+POST {{host}}/api/checklists
+Content-Type: application/json
+
+{
+    "name": "Checklist 1",
+    "description": "Description 1"
+}
+
+### Add Checklist Error
+POST {{host}}/api/checklists
+Content-Type: application/json
+
+{
+    "name": "",
+    "description": "Description 1"
+}
