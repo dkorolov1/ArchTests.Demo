@@ -9,6 +9,8 @@ using ArchUnitNET.Demo.Application.Checklists.Commands.DeleteChecklist;
 using ArchUnitNET.Demo.Application.Requirements.Commands.AddRequirement;
 using ArchUnitNET.Demo.Application.Requirements.Commands.UpdateCompliedState;
 using ArchUnitNET.Demo.Application.Checklists.Queries.GetChecklists;
+using ArchUnitNET.Demo.Domain.Checklists;
+using ArchUnitNET.Demo.Domain.Requirements;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -38,9 +40,9 @@ var app = builder.Build();
     })
     .WithName("GetChecklists")
     .WithSummary("Retrieves all checklists from the database.")
-    .WithDescription("Retrieves all checklist items from the database.");
-    //.Produces<IEnumerable<Checklist>>(StatusCodes.Status200OK)
-    //.Produces<IEnumerable<Checklist>>(StatusCodes.Status500InternalServerError);
+    .WithDescription("Retrieves all checklist items from the database.")
+    .Produces<IEnumerable<Checklist>>(StatusCodes.Status200OK)
+    .Produces(StatusCodes.Status500InternalServerError);
 
     app.MapPost("/api/checklists", async (AddChecklistRequest request, ISender mediator, IMapper mapper) =>
     {
@@ -53,8 +55,9 @@ var app = builder.Build();
     })
     .WithName("AddChecklist")
     .WithSummary("Adds a new checklist to the database.")
-    .WithDescription("Creates a new checklist item with the specified name.");
-    //.Produces<Checklist>(StatusCodes.Status201Created);
+    .WithDescription("Creates a new checklist item with the specified name.")
+    .Produces<Checklist>(StatusCodes.Status201Created)
+    .Produces(StatusCodes.Status500InternalServerError);
 
     app.MapDelete("/api/checklists/{checklistId}", async (string checklistId, ISender mediator) =>
     {
@@ -81,10 +84,11 @@ var app = builder.Build();
     })
     .WithName("AddRequirement")
     .WithSummary("Adds a new requirement to a checklist.")
-    .WithDescription("Creates a new requirement item for the specified checklist.");
-    //.Produces<IEnumerable<Requirement>>(StatusCodes.Status200OK);
+    .WithDescription("Creates a new requirement item for the specified checklist.")
+    .Produces<IEnumerable<Requirement>>(StatusCodes.Status200OK)
+    .Produces(StatusCodes.Status500InternalServerError);
 
-    app.MapPost("/api/requirements/{requirementId}/compliance", async (UpdateCompliedStateRequest request, string requirementId, ISender mediator, IMapper mapper) =>
+    app.MapPatch("/api/requirements/{requirementId}", async (UpdateCompliedStateRequest request, string requirementId, ISender mediator, IMapper mapper) =>
     {
         var command = mapper.Map<UpdateCompliedStateCommand>(request) with { RequirementId = Guid.Parse(requirementId) };
         var result = await mediator.Send(command);
@@ -95,8 +99,9 @@ var app = builder.Build();
     })
     .WithName("UpdateCompliedState")
     .WithSummary("Updates the compliance state of a requirement.")
-    .WithDescription("Updates the compliance state of a requirement item with the specified ID.");
-   //.Produces<IEnumerable<Requirement>>(StatusCodes.Status200OK);
+    .WithDescription("Updates the compliance state of a requirement item with the specified ID.")
+    .Produces<IEnumerable<Requirement>>(StatusCodes.Status200OK)
+    .Produces(StatusCodes.Status500InternalServerError);
 
     app.Run();
 }

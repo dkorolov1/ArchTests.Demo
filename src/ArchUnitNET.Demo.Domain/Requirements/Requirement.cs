@@ -5,7 +5,7 @@ namespace ArchUnitNET.Demo.Domain.Requirements;
 
 public class Requirement : Entity
 {
-    public Requirement() : base(Guid.Empty)
+    public Requirement() : base(Guid.NewGuid())
     {
         Title = null!;
         Text = null!;

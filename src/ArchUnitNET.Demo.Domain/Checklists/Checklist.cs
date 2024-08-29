@@ -11,7 +11,7 @@ public class Checklist : Entity
         Progress = progress;
     }
 
-    public Checklist() : base(Guid.Empty)
+    public Checklist() : base(Guid.NewGuid())
     {
         Name = null!;
         Description = null!;

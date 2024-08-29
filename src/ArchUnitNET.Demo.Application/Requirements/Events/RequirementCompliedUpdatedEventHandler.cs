@@ -9,7 +9,7 @@ namespace ArchUnitNET.Demo.Application.Requirements.Events;
 public class RequirementCompliedUpdatedEventHandler
     (IChecklistsRepository checklistsRepository,
     IRequirementsRepository requirementsRepository,
-    ChecklistProgressService checklistProgressService) : INotificationHandler<RequirementCompliedUpdatedEvent>
+    IChecklistProgressService checklistProgressService) : INotificationHandler<RequirementCompliedUpdatedEvent>
 {
     public async Task Handle(RequirementCompliedUpdatedEvent notification, CancellationToken cancellationToken)
     {
