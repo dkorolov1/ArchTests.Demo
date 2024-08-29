@@ -12,7 +12,7 @@ If Clean Architecture, DDD, or CQRS are new to you, these brief videos can help 
 
 ## Motivation 🎯
 
-### <u>**Showcasing The Beauty Of Architectural Testing And How It Harmonizes With DDD And CQRS, Ensuring A Powerful And Continuous Alignment With Design Principles.**</u>
+### <u>**Showcasing The Beauty Of Architectural Testing And How It Harmonizes With Clean Architecture, DDD And CQRS, Ensuring A Powerful And Continuous Alignment With Design Principles.**</u>
 
 ## Stack 🛠️
 
