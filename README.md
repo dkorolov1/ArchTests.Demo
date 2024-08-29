@@ -1,14 +1,22 @@
 
-# ArchTests.Demo 🏪
+# ArchTests.Demo 🧱
 This solution is a demo project built on the philosophy of Clean Architecture, incorporating DDD and CQRS patterns. It features a simple API with a minimal set of functions for managing Checklist and Requirement entities, where Requirements belong to Checklists. Essentially, it’s a familiar to-do list with a different label. To keep things straightforward, in-memory repositories are used, so the data only persists for the duration of the API's runtime.
 
-## Motivation
+#### New to Clean Architecture, DDD, or CQRS?
 
-### **Showcasing the beauty of architectural testing and how it harmonizes with DDD and CQRS, ensuring a powerful and continuous alignment with design principles.**
+If Clean Architecture, DDD, or CQRS are new to you, these brief videos can help you get acquainted with the basics.
 
-## Stack
+[Understand Clean Architecture in 7 Minutes](https://www.youtube.com/watch?v=1OLSE6tX71Y) <br/>
+[Domain-Driven Design in 150 Seconds](https://www.youtube.com/watch?v=8Z5IAkWcnIw) <br/>
+[CQRS & MediatR](https://www.youtube.com/watch?v=MwMVvLBSJa8&t=3s) <br/>
 
-**Arch:** Clean Architecture, DDD, CQRS
+## Motivation 🎯
+
+### <u>**Showcasing The Beauty Of Architectural Testing And How It Harmonizes With DDD And CQRS, Ensuring A Powerful And Continuous Alignment With Design Principles.**</u>
+
+## Stack 🛠️
+
+**Arch:** Clean Architecture, DDD, CQRS <br/>
 **Tech:** .NET 8 Minimal Api, MediatR, Mapster, ErrorOr, FluentValidation, xUnit, ArchUnitNET
 
 
@@ -26,12 +34,12 @@ Swagger is integrated, allowing you to explore all endpoints at `<api_root_url>/
 ### Endpoints
 
 ##### Checklists:
-Add : `POST:{{host}}/api/checklists`
-Get All : `GET:{{host}}/api/checklists`
-Delete : `DELETE:{{host}}/api/checklists/{{checklistId}}`
+Add : `POST:{{host}}/api/checklists`<br/>
+Get All : `GET:{{host}}/api/checklists`<br/>
+Delete : `DELETE:{{host}}/api/checklists/{{checklistId}}`<br/>
 ##### Requirements:
-Add To Checklist : `POST:{{host}}/api/checklists/{{checklistId}}/requirements`
-Update <u>IsComplied</u> Flag : `PATCH:{{host}}/api/requirements/{{requirementId}}`
+Add To Checklist : `POST:{{host}}/api/checklists/{{checklistId}}/requirements`<br/>
+Update <u>IsComplied</u> Flag : `PATCH:{{host}}/api/requirements/{{requirementId}}`<br/>
 
 ## Play With It 🎮
 The `requests` folder contains examples of all the requests supported by the API. You can try them out directly from VS Code, as shown below.
