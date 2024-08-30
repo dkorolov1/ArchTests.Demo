@@ -1,6 +1,6 @@
 
 # ArchTests.Demo 🧱
-This solution is a demo project built on the philosophy of Clean Architecture, incorporating DDD and CQRS patterns. It features a simple API with a minimal set of functions for managing Checklist and Requirement entities, where Requirements belong to Checklists. Essentially, it’s a familiar to-do list with a different label😃 To keep things simple and  straightforward, in-memory repositories are used, so the data only persists for the duration of the API's runtime.
+This solution is a demo project built on the philosophy of Clean Architecture, incorporating DDD and CQRS patterns. It features a simple API with a minimal set of functions for managing Checklist and Requirement entities, where Requirements belong to Checklists. Essentially, it’s a familiar to-do list with a different label :) To keep things simple and  straightforward, in-memory repositories are used, so the data only persists for the duration of the API's runtime.
 
 #### New to Clean Architecture, DDD, or CQRS?
 
