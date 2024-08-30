@@ -17,7 +17,7 @@ If Clean Architecture, DDD, or CQRS are new to you, these brief videos can help 
 ## Stack 🛠️
 
 **Arch:** Clean Architecture, DDD, CQRS <br/>
-**Tech:** .NET 8 Minimal Api, MediatR, Mapster, ErrorOr, FluentValidation, xUnit, ArchUnitNET
+**Tech:** .NET 8 Minimal Api, MediatR, Mapster, ErrorOr, FluentValidation, xUnit, [ArchUnitNET](https://github.com/TNG/ArchUnitNET)
 
 
 ## Run It 🏃
