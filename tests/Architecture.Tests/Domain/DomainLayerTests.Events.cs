@@ -42,7 +42,7 @@ public partial class DomainLayerTests
     }
 
     [Fact]
-    public void DomainEvents_Should_NotBeUsedOutsideDomainLayer_And_EventHandlers()
+    public void DomainEvents_Should_NotBeUsedOutsideDomainLayer_Or_EventHandlers()
     {
         ArchRuleDefinition
             .Classes()
