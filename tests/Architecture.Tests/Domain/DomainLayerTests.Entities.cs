@@ -4,7 +4,7 @@ using FluentAssertions;
 
 namespace Architecture.Tests.Domain;
 
-public partial class ArchUnitDomainTests
+public partial class DomainLayerTests
 {
     [Fact]
     public void DomainEntities_Should_ResideInDomainLayer()

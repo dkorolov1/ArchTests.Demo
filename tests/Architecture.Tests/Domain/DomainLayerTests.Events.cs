@@ -3,7 +3,7 @@ using ArchUnitNET.xUnit;
 
 namespace Architecture.Tests.Domain;
 
-public partial class ArchUnitDomainTests
+public partial class DomainLayerTests
 {
     [Fact]
     public void DomainEvents_Should_ResideInDomainLayer()

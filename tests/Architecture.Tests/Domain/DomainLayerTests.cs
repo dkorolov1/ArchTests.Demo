@@ -5,7 +5,7 @@ using ArchUnitNET.Fluent.Syntax.Elements.Types.Classes;
 
 namespace Architecture.Tests.Domain;
 
-public partial class ArchUnitDomainTests : ArchitectureBaseTest
+public partial class DomainLayerTests : ArchBaseTest
 {
     private readonly GivenClassesConjunction _domainEventClasses = ArchRuleDefinition
             .Classes()

@@ -5,7 +5,7 @@ using Architecture.Tests.Common.Conditions;
 
 namespace Architecture.Tests.Application;
 
-public partial class ArchUnitApplicationTests
+public partial class ApplicationLayerTests
 {
     [Fact]
     public void Requests_Should_ResideInApplicationLayer()

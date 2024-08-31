@@ -10,7 +10,7 @@ using Assembly = System.Reflection.Assembly;
 
 namespace Architecture.Tests;
 
-public abstract class ArchitectureBaseTest
+public abstract class ArchBaseTest
 {
     protected static readonly Assembly DomainAssembly = typeof(Entity).Assembly;
     protected static readonly Assembly ApplicationAssembly = typeof(AddChecklistCommand).Assembly;

@@ -1,5 +1,5 @@
 ### Set complied state of a requirement to true
-@requirementId=e5dd3aaa-ccdc-466e-b752-fe7c5ffbdf91
+@requirementId=8a4e875a-3b23-47c5-af3c-c5ba21646e0a
 PATCH {{host}}/api/requirements/{{requirementId}}
 Content-Type: application/json
 

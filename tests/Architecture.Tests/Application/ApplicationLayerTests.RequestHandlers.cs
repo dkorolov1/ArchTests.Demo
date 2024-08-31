@@ -2,7 +2,7 @@ using ArchUnitNET.xUnit;
 
 namespace Architecture.Tests.Application;
 
-public partial class ArchUnitApplicationTests
+public partial class ApplicationLayerTests
 {
     [Fact]
     public void RequestHandlers_Should_HaveCommandOrQueryHandlerPostfix()

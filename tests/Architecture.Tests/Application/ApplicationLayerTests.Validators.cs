@@ -2,7 +2,7 @@ using ArchUnitNET.xUnit;
 
 namespace Architecture.Tests.Application;
 
-public partial class ArchUnitApplicationTests : ArchitectureBaseTest
+public partial class ApplicationLayerTests : ArchBaseTest
 {
     [Fact]
     public void Validators_Should_ResideInApplicationLayer()

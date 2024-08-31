@@ -5,7 +5,7 @@ using FluentValidation;
 
 namespace Architecture.Tests.Application;
 
-public partial class ArchUnitApplicationTests : ArchitectureBaseTest
+public partial class ApplicationLayerTests : ArchBaseTest
 {
 	private readonly GivenClassesConjunction _requestHandlers = ArchRuleDefinition
 		.Classes()
