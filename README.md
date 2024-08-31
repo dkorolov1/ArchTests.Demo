@@ -23,7 +23,7 @@ If Clean Architecture, DDD, or CQRS are new to you, these brief videos can help 
 ## Run It 🏃
 It has no external dependencies. To run the project, simply execute:
 
-`otnet run --project "src/ArchUnitNET.Demo.Api"`
+`dotnet run --project "src/ArchUnitNET.Demo.Api"`
 
 ## Explore It 🔎
 
