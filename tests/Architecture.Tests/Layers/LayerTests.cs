@@ -3,7 +3,7 @@ using ArchUnitNET.Fluent;
 
 namespace Architecture.Tests.Layers;
 
-public class LayerDependencyTests : ArchBaseTest
+public class LayerTests : ArchBaseTest
 {
     [Fact]
     public void PresentationLayer_Should_NotDependOnInfrastructureOrDomainLayers()
