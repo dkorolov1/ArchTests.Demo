@@ -48,7 +48,7 @@ public partial class ApplicationLayerTests
     [Fact]
     public void Requests_ShouldReturnErrorOrWrappedResult()
     {
-        var condition = new InterfaceImplementationReturnWrappedInResultCondition(
+        var condition = new InterfaceWrappedResultCondition(
             ApplicationAssembly,
             typeof(IRequest<>),
             typeof(ErrorOr<>));

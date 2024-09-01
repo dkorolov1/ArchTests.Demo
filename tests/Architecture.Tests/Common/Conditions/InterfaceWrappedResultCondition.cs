@@ -3,7 +3,7 @@ using ArchUnitNET.Fluent.Conditions;
 
 namespace Architecture.Tests.Common.Conditions;
 
-internal sealed class InterfaceImplementationReturnWrappedInResultCondition(
+internal sealed class InterfaceWrappedResultCondition(
     System.Reflection.Assembly assembly,
     Type interfaceType,
     Type resultWrappedInType) : ICondition<Class>
